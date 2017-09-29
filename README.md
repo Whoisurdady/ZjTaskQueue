@@ -3,8 +3,21 @@
 先把之前写的东西拿过来share一下，之后完善文档
 
 
-导入
-	clone 项目，引入module taskque
+如何导入：
+	Add it in your root build.gradle at the end of repositories:
+
+    	allprojects {
+    		repositories {
+    			...
+    			maven { url 'https://jitpack.io' }
+    		}
+    	}Copy
+    Step 2. Add the dependency
+
+    	dependencies {
+    	        compile 'com.github.Whoisurdady:ZjTaskQueue:v1.0'
+    	}
+
 
 使用方法:
 
