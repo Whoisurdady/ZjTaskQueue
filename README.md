@@ -13,7 +13,7 @@
 
 	可以在任意时刻，给builder add task并execute，如果没有任务，task会被立即执行，如果有任务，会将task放在任务队列的最后执行
 	2.针对每个人的完成状态，做回调
-	TaskChain.getBuilder().add(BaseTask task).onSucceed(Runnable).onFail(Runnable).onCancel(Runnable).build().execute();
+	TaskQueue.getBuilder().add(BaseTask task).onSucceed(Runnable).onFail(Runnable).onCancel(Runnable).build().execute();
 
 	注：这个builder，如果中间有任务被cancel或者失败了，会跳过失败的任务继续执行
 	如果希望在中间任务失败后，整个任务链不继续进行，使用 TaskChain.getLinkedBuilder();
